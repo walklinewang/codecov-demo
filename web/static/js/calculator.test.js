@@ -32,6 +32,7 @@ describe('Calculator test suite', () => {
     expect(calculator.currentOperand).toBe('1');
   })
 
+  
   test('test operation', () => {
     const calculator = new calc.Calculator();
     calculator.chooseOperation('+');
