@@ -20,8 +20,8 @@ jobs:
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     - name: Upload coverage reports to Codecov with GitHub Action
-    uses: codecov/codecov-action@v5
-    env:
-      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-    with:
-      flags: backend
+      uses: codecov/codecov-action@v5
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      with:
+        flags: backend
